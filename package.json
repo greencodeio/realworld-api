@@ -19,7 +19,7 @@
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
     "migration:drop": "typeorm schema:drop",
-    "migration:generate": "typeorm migration:generate -d dist/typeorm-ds.js --pretty",
+    "migration:generate": "typeorm migration:generate -d dist/typeorm-ds.js",
     "migration:revert": "typeorm migration:revert -d dist/typeorm-ds.js",
     "migration:run": "typeorm migration:run -d dist/typeorm-ds.js"
   },
